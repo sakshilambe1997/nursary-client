@@ -11,9 +11,9 @@ function Home() {
 
    const loadPlants=async ()=>{
     toast.loading("Loading plants...")
-
-    const response = await axios.get(`${process.env.REACT_APP_API_URL}/plants`)
     toast.dismiss()
+    const response = await axios.get(`${process.env.REACT_APP_API_URL}/plants`)
+
 
     toast.success('Plants Fetched Successfully!!')
     
